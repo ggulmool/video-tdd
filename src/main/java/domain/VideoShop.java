@@ -1,3 +1,5 @@
+package domain;
+
 public class VideoShop {
     // 계산한다 (포인트 총합)
     // 할인한다 (일일 대여가격을)
