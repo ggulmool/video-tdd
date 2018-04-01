@@ -3,6 +3,7 @@ package domain;
 import org.junit.Before;
 import org.junit.Test;
 
+import static domain.Constants.ONE_DAY;
 import static org.junit.Assert.assertEquals;
 
 public class CustomerTest {
@@ -22,7 +23,7 @@ public class CustomerTest {
         videos.add(new Video("엘클라시코2", 1000, VideoType.SPORTS));
         videos.add(new Video("다큐3일", 1000, VideoType.DOCUMENTARY));
 
-        customer.rent(videos, 1);
+        customer.rent(videos, ONE_DAY);
         assertEquals(5, customer.getPoint());
     }
 

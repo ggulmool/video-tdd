@@ -14,17 +14,10 @@ public class Video {
         this.videoType = videoType;
     }
 
-    //TODO:리팩토링
     public int getPaymentFee(int rentalPeriod) {
-        if (videoType == VideoType.MOVIE) {
-            return (rentalPeriod > 2 ? dailyRentalFee * 2 + ((rentalPeriod - 2) * (dailyRentalFee / 2)) : dailyRentalFee * rentalPeriod);
-        }
-
-        if (videoType == VideoType.DOCUMENTARY) {
-            return (rentalPeriod > 2 ? dailyRentalFee * 3 + ((rentalPeriod - 3) * (dailyRentalFee / 3 * 2)) : dailyRentalFee * rentalPeriod);
-        }
-
-        return dailyRentalFee * rentalPeriod;
+        int paymentAmt = dailyRentalFee * rentalPeriod;
+        int discountAmt = videoType.discountAmt(dailyRentalFee, rentalPeriod);
+        return paymentAmt - discountAmt;
     }
 
     public int getPoint() {
