@@ -20,7 +20,7 @@ public class VideoTest {
     }
 
     @Test
-    public void 대여요금_조회() throws Exception {
+    public void 비디오_종류별_할인_대여요금_조회() throws Exception {
         assertEquals(2000, movie.getPaymentFee(TWO_DAY));
         assertEquals(2500, movie.getPaymentFee(THREE_DAY));
 
@@ -32,14 +32,14 @@ public class VideoTest {
     }
 
     @Test
-    public void 종류별_포인트_조회() throws Exception {
+    public void 비디오_종류별_적립_포인트_조회() throws Exception {
         assertEquals(1, movie.getPoint());
         assertEquals(1, sports.getPoint());
         assertEquals(2, documentary.getPoint());
     }
 
     @Test
-    public void 대여() throws Exception {
+    public void 비디오_종류별_대여() throws Exception {
         RentalDetail movieRentalDetail = movie.rent(THREE_DAY);
         assertEquals(2500, movieRentalDetail.getPaymentFee());
         assertEquals(1, movieRentalDetail.getPoint());
