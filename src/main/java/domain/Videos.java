@@ -16,7 +16,7 @@ public class Videos {
     }
 
     public Rental rent(int rentalPeriod) {
-        Rental rental = new Rental(rentalPeriod);
+        Rental rental = new Rental();
         videos.forEach(video -> {
             RentalDetail rentalDetail = video.rent(rentalPeriod);
             rental.add(rentalDetail);

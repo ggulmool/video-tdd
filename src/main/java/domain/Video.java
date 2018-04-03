@@ -25,6 +25,6 @@ public class Video {
     }
 
     public RentalDetail rent(int rentalPeriod) {
-        return new RentalDetail(getPaymentFee(rentalPeriod), getPoint(), new Date());
+        return new RentalDetail(getPaymentFee(rentalPeriod), getPoint(), rentalPeriod, new Date());
     }
 }

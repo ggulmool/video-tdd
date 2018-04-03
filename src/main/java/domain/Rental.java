@@ -5,13 +5,11 @@ import java.util.List;
 
 public class Rental {
 
-    private int rentalPeriod;
     private int totalRentalFee;
     private int totalPoint;
     private List<RentalDetail> rentalDetails;
 
-    public Rental(int rentalPeriod) {
-        this.rentalPeriod = rentalPeriod;
+    public Rental() {
         this.rentalDetails = new ArrayList<>();
     }
 
@@ -21,13 +19,9 @@ public class Rental {
         this.totalPoint += rentalDetail.getPoint();
     }
 
-    public int getRentalPeriod() {
-        return rentalPeriod;
-    }
-
     public int getTotalRentalFee() {
         return totalRentalFee;
-    }
+}
 
     public int getTotalPoint() {
         return totalPoint;
