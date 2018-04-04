@@ -14,8 +14,13 @@ public class Customer {
         this.rentals = new ArrayList<>();
     }
 
-    public void rent(Videos videos, int rentalPeriod) {
-        Rental rental = videos.rent(rentalPeriod);
+    public void rent(int rentalPeriod, List<Video> videos) {
+        Rental rental = new Rental();
+        videos.forEach(video -> {
+            RentalDetail rentalDetail = video.rent(rentalPeriod);
+            rental.add(rentalDetail);
+        });
+
         this.point += rental.getTotalPoint();
         this.rentals.add(rental);
     }

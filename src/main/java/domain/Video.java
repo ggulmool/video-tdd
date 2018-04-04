@@ -7,11 +7,13 @@ public class Video {
     private String title;
     private int dailyRentalFee;
     private VideoType videoType;
+    private VideoStatus videoStatus;
 
     public Video(String title, int dailyRentalFee, VideoType videoType) {
         this.title = title;
         this.dailyRentalFee = dailyRentalFee;
         this.videoType = videoType;
+        this.videoStatus = VideoStatus.READY;
     }
 
     public int getPaymentFee(int rentalPeriod) {
@@ -24,7 +26,12 @@ public class Video {
         return videoType.getPoint();
     }
 
+    public VideoStatus getVideoStatus() {
+        return videoStatus;
+    }
+
     public RentalDetail rent(int rentalPeriod) {
+        this.videoStatus = VideoStatus.RENT;
         return new RentalDetail(getPaymentFee(rentalPeriod), getPoint(), rentalPeriod, new Date());
     }
 }

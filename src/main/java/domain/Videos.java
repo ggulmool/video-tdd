@@ -2,6 +2,7 @@ package domain;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Videos {
 
@@ -15,12 +16,8 @@ public class Videos {
         this.videos.add(video);
     }
 
-    public Rental rent(int rentalPeriod) {
-        Rental rental = new Rental();
-        videos.forEach(video -> {
-            RentalDetail rentalDetail = video.rent(rentalPeriod);
-            rental.add(rentalDetail);
-        });
-        return rental;
+    public List<Video> getReadyVideos() {
+        return videos.stream().filter(v -> v.getVideoStatus() == VideoStatus.READY)
+                .collect(Collectors.toList());
     }
 }

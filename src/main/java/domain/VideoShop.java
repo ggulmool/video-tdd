@@ -1,19 +1,33 @@
 package domain;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class VideoShop {
 
-    private List<Customer> customers;
+    private Customers customers;
+    private Videos videos;
 
     public VideoShop() {
-        this.customers = new ArrayList<>();
+        this.customers = new Customers();
+        this.videos = new Videos();
     }
 
-    // 계산한다 (포인트 총합)
+    public Video registerVideo(Video video) {
+        this.videos.add(video);
+        return video;
+    }
+
+    public List<Video> getReadyVideo() {
+        return videos.getReadyVideos();
+    }
+
     public int pointByCustomer(String name) {
-        return 0;
+        Customer customer = customers.findCustomerByName(name);
+        return customer.getPoint();
+    }
+
+    public Customer findCustomerByName(String name) {
+        return customers.findCustomerByName(name);
     }
 
     public Customer registerCustomer(String name) {
@@ -21,6 +35,8 @@ public class VideoShop {
         customers.add(customer);
         return customer;
     }
+
+
     // 할인한다 (일일 대여가격을)
     // 누적한다 (포인트를)
     // 계산한다 (포인트 총합을)
