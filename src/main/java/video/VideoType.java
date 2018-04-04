@@ -1,7 +1,7 @@
-package domain;
+package video;
 
-import static domain.Constants.THREE_DAY;
-import static domain.Constants.TWO_DAY;
+import static common.Constants.THREE_DAY;
+import static common.Constants.TWO_DAY;
 
 public enum VideoType implements Discountable {
     MOVIE(1) {

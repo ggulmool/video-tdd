@@ -1,4 +1,4 @@
-package domain;
+package rental;
 
 import java.util.Date;
 

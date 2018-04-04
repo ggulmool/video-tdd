@@ -1,4 +1,4 @@
-package domain;
+package video;
 
 public interface Discountable {
 

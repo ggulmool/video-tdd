@@ -1,4 +1,9 @@
-package domain;
+package shop;
+
+import customer.Customer;
+import customer.Customers;
+import video.Video;
+import video.Videos;
 
 import java.util.List;
 

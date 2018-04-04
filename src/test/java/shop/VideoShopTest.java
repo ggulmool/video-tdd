@@ -1,7 +1,11 @@
-package domain;
+package shop;
 
+import common.Constants;
+import customer.Customer;
 import org.junit.Before;
 import org.junit.Test;
+import video.Video;
+import video.VideoType;
 
 import java.util.List;
 
@@ -34,7 +38,7 @@ public class VideoShopTest {
         Customer customer1 = videoShop.findCustomerByName("ggulmool");
         List<Video> videos = videoShop.getReadyVideo();
         customer1.rent(Constants.ONE_DAY, videos);
-        assertEquals(0, videoShop.getReadyVideo());
+        assertEquals(0, videoShop.getReadyVideo().size());
     }
 
     @Test

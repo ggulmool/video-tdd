@@ -1,4 +1,8 @@
-package domain;
+package customer;
+
+import rental.Rental;
+import rental.RentalDetail;
+import video.Video;
 
 import java.util.ArrayList;
 import java.util.List;

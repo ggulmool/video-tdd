@@ -1,11 +1,13 @@
-package domain;
+package customer;
 
 import org.junit.Before;
 import org.junit.Test;
+import video.Video;
+import video.VideoType;
 
 import java.util.Arrays;
 
-import static domain.Constants.ONE_DAY;
+import static common.Constants.ONE_DAY;
 import static org.junit.Assert.assertEquals;
 
 public class CustomerTest {

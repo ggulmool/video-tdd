@@ -1,4 +1,6 @@
-package domain;
+package video;
+
+import rental.RentalDetail;
 
 import java.util.Date;
 

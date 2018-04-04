@@ -1,8 +1,8 @@
-package domain;
+package video;
 
 import org.junit.Test;
 
-import static domain.Constants.FOUR_DAY;
+import static common.Constants.FOUR_DAY;
 import static org.junit.Assert.assertEquals;
 
 public class DiscountTest {

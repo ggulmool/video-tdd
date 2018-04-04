@@ -1,9 +1,10 @@
-package domain;
+package video;
 
 import org.junit.Before;
 import org.junit.Test;
+import rental.RentalDetail;
 
-import static domain.Constants.*;
+import static common.Constants.*;
 import static org.junit.Assert.assertEquals;
 
 public class VideoTest {
