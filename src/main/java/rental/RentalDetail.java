@@ -9,7 +9,7 @@ public class RentalDetail {
     private int rentalPeriod;
     private Date rentalDate;
 
-    public RentalDetail(int paymentFee, int point, int rentalPeriod,Date rentalDate) {
+    public RentalDetail(int paymentFee, int point, int rentalPeriod, Date rentalDate) {
         this.paymentFee = paymentFee;
         this.point = point;
         this.rentalPeriod = rentalPeriod;
