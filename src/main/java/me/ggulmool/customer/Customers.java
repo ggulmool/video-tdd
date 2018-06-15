@@ -20,6 +20,6 @@ public class Customers {
         return customers.stream()
                 .filter(c -> c.getName().equals(name))
                 .findFirst()
-                .orElseThrow(() -> new IllegalArgumentException("me.ggulmool.customer not found"));
+                .orElseThrow(() -> new IllegalArgumentException("해당 고객이 존재하지 않습니다."));
     }
 }

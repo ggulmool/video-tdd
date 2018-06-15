@@ -1,5 +1,6 @@
-package me.ggulmool.customer;
+package me.ggulmool.customer.repository;
 
+import me.ggulmool.customer.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
