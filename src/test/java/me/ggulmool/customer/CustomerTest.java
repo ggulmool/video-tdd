@@ -1,13 +1,13 @@
-package customer;
+package me.ggulmool.customer;
 
 import org.junit.Before;
 import org.junit.Test;
-import video.Video;
-import video.VideoType;
+import me.ggulmool.video.Video;
+import me.ggulmool.video.VideoType;
 
 import java.util.Arrays;
 
-import static common.Constants.ONE_DAY;
+import static me.ggulmool.common.Constants.ONE_DAY;
 import static org.junit.Assert.assertEquals;
 
 public class CustomerTest {

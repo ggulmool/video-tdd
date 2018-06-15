@@ -1,8 +1,8 @@
-package video;
+package me.ggulmool.video;
 
 import org.junit.Test;
 
-import static common.Constants.FOUR_DAY;
+import static me.ggulmool.common.Constants.FOUR_DAY;
 import static org.junit.Assert.assertEquals;
 
 public class DiscountTest {

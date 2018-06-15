@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.ggulmool</groupId>
-    <artifactId>video-tdd</artifactId>
+    <artifactId>me.ggulmool.video-tdd</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.0.RELEASE</version>
-        <relativePath /> <!-- lookup parent from repository -->
+        <relativePath /> <!-- lookup parent from me.ggulmool.repository -->
     </parent>
 
     <properties>

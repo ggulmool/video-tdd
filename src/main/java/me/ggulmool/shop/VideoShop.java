@@ -1,9 +1,9 @@
-package shop;
+package me.ggulmool.shop;
 
-import customer.Customer;
-import customer.Customers;
-import video.Video;
-import video.Videos;
+import me.ggulmool.customer.Customer;
+import me.ggulmool.customer.Customers;
+import me.ggulmool.video.Video;
+import me.ggulmool.video.Videos;
 
 import java.util.List;
 

@@ -1,11 +1,11 @@
-package shop;
+package me.ggulmool.shop;
 
-import common.Constants;
-import customer.Customer;
+import me.ggulmool.common.Constants;
+import me.ggulmool.customer.Customer;
 import org.junit.Before;
 import org.junit.Test;
-import video.Video;
-import video.VideoType;
+import me.ggulmool.video.Video;
+import me.ggulmool.video.VideoType;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package video;
+package me.ggulmool.video;
 
-import static common.Constants.THREE_DAY;
-import static common.Constants.TWO_DAY;
+import static me.ggulmool.common.Constants.THREE_DAY;
+import static me.ggulmool.common.Constants.TWO_DAY;
 
 public enum VideoType implements Discountable {
     MOVIE(1) {

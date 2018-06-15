@@ -1,10 +1,10 @@
-package video;
+package me.ggulmool.video;
 
 import org.junit.Before;
 import org.junit.Test;
-import rental.RentalDetail;
+import me.ggulmool.rental.RentalDetail;
 
-import static common.Constants.*;
+import static me.ggulmool.common.Constants.*;
 import static org.junit.Assert.assertEquals;
 
 public class VideoTest {

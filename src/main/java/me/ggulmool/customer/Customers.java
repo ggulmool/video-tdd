@@ -1,4 +1,4 @@
-package customer;
+package me.ggulmool.customer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +20,6 @@ public class Customers {
         return customers.stream()
                 .filter(c -> c.getName().equals(name))
                 .findFirst()
-                .orElseThrow(() -> new IllegalArgumentException("customer not found"));
+                .orElseThrow(() -> new IllegalArgumentException("me.ggulmool.customer not found"));
     }
 }

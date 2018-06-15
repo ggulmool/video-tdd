@@ -1,4 +1,4 @@
-package common;
+package me.ggulmool.common;
 
 public final class Constants {
 

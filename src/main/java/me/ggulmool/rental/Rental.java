@@ -1,4 +1,4 @@
-package rental;
+package me.ggulmool.rental;
 
 import java.util.ArrayList;
 import java.util.List;

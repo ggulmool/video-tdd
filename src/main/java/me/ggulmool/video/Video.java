@@ -1,6 +1,6 @@
-package video;
+package me.ggulmool.video;
 
-import rental.RentalDetail;
+import me.ggulmool.rental.RentalDetail;
 
 import java.util.Date;
 

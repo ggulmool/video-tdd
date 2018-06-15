@@ -1,4 +1,4 @@
-package video;
+package me.ggulmool.video;
 
 import java.util.ArrayList;
 import java.util.List;

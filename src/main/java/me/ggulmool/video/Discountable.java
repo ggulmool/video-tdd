@@ -1,4 +1,4 @@
-package video;
+package me.ggulmool.video;
 
 public interface Discountable {
 
